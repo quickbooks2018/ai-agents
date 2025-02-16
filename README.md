@@ -59,9 +59,14 @@ http://localhost:7788
 ### Install OLLAMA
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
+
 ollama serve &
+
 http://localhost:11434
 
 ollama pull deepseek-r1:14b
+
 ollama pull deepseek-r1:8b  # I used this
+
+ollama run deepseek-r1:8b
 ```
