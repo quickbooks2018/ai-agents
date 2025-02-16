@@ -52,4 +52,14 @@ playwright install
 cp .env.example .env
 
 xvfb-run python webui.py --ip 127.0.0.1 --port 7788
+http://localhost:7788
+```
+
+### Install OLLAMA
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+ollama serve &
+http://localhost:11434
+
+ollama pull deepseek-r1:14b
 ```
