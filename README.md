@@ -19,7 +19,8 @@ docker run \
 docker exec -u root -it browser-use bash
 sudo su
 cd /root
-apt-get install -y python3-venv git xvfb python3-full
+apt update -y
+apt install -y python3-venv git xvfb python3-full
 ```
 
 ### web-ui
