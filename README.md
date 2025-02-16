@@ -52,7 +52,7 @@ playwright install
 
 cp .env.example .env
 
-xvfb-run python webui.py --ip 127.0.0.1 --port 7788
+xvfb-run -a --server-args="-screen 0 1280x1024x24" python webui.py --ip 0.0.0.0 --port 7788
 
 http://localhost:7788
 ```
