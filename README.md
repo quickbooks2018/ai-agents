@@ -6,7 +6,7 @@ docker run \
   --name browser-use \
   --shm-size=4096m \
   -w /mnt \
-  -p 6905:6901 \
+  -p 8080:6901 \
   -e VNC_PW=password \
   -id kasmweb/ubuntu-noble-desktop:1.16.1
   ```
