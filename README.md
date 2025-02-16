@@ -11,8 +11,8 @@ docker run \
   -id kasmweb/ubuntu-noble-desktop:1.16.1
  ```
 
-  ### browser-use
-  - https://github.com/browser-use/browser-use.git
+### browser-use
+- https://github.com/browser-use/browser-use.git
 
 # Install latest version of python
 ```bash
