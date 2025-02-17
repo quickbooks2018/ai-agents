@@ -146,3 +146,6 @@ ollama run deepseek-r1:8b
 
 ### Vscode Insiders
 - https://code.visualstudio.com/insiders/
+
+### Google AI Studio (API Key)
+- https://aistudio.google.com/apikey
