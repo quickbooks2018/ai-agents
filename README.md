@@ -85,9 +85,9 @@ ollama serve &
 
 http://localhost:11434
 
-ollama pull deepseek-r1:14b
+ollama pull deepseek-r1:8b
 
-ollama pull deepseek-r1:8b  # I used this
+ollama pull deepseek-r1:8b  # I used this for docker
 
 ollama run deepseek-r1:8b
 
@@ -139,7 +139,7 @@ http://localhost:7788
 ```bash
 https://ollama.com/download/mac
 
-ollama pull deepseek-r1:8b  # I used this
+ollama pull deepseek-r1:14b  # I used this for Mac OS
 
-ollama run deepseek-r1:8b
+ollama run deepseek-r1:14b
 ```
