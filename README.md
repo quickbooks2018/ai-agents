@@ -9,6 +9,9 @@ docker run \
   -p 8080:6901 \
   -e VNC_PW=password \
   -id kasmweb/ubuntu-noble-desktop:1.16.1
+  
+user: kasm_user
+password: password
  ```
 
 ### browser-use
