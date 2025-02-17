@@ -143,3 +143,6 @@ ollama pull deepseek-r1:8b  # I used this for Mac OS
 
 ollama run deepseek-r1:8b
 ```
+
+### Vscode Insiders
+- https://code.visualstudio.com/insiders/
