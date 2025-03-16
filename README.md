@@ -202,3 +202,15 @@ docker build -t mcp/puppeteer -f src/puppeteer/Dockerfile .
   }
 }
 ```
+
+- Codium Windsurf
+```json
+{
+  "mcpServers": {
+    "puppeteer": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "mcp/puppeteer"]
+    }
+  }
+}
+```
