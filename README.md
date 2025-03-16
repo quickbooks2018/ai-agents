@@ -154,9 +154,13 @@ ollama run deepseek-r1:8b
 - https://aistudio.google.com/apikey
 
 ### MCP Server
+- This provides internet access, so you can get latest documentation and update code accordingly
+
+```bash
 git clone https://github.com/modelcontextprotocol/servers.git
 cd servers
 docker build -t mcp/puppeteer -f src/puppeteer/Dockerfile .
+```
 
 - vscode Insider Settings
 ```json
