@@ -178,7 +178,20 @@ docker build -t mcp/puppeteer -f src/puppeteer/Dockerfile .
     
   }
 ```
+
 - Claude Desktop Settings
+```json
+{
+  "mcpServers": {
+    "puppeteer": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "mcp/puppeteer"]
+    }
+  }
+}
+```
+
+- Cursor
 ```json
 {
   "mcpServers": {
