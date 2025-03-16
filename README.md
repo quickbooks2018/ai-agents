@@ -152,3 +152,36 @@ ollama run deepseek-r1:8b
 
 ### Google AI Studio (API Key)
 - https://aistudio.google.com/apikey
+
+### MCP Server
+git clone https://github.com/modelcontextprotocol/servers.git
+cd servers
+docker build -t mcp/puppeteer -f src/puppeteer/Dockerfile .
+
+- vscode Insider Settings
+```json
+{
+    "mcp": {
+
+      "inputs": [],
+      "servers": {
+        "puppeteer": {
+          "command": "docker",
+          "args": ["run", "-i", "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "mcp/puppeteer"]
+        }
+      }
+    }
+    
+  }
+```
+- Claude Desktop Settings
+```json
+{
+  "mcpServers": {
+    "puppeteer": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "mcp/puppeteer"]
+    }
+  }
+}
+```
