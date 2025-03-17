@@ -154,6 +154,7 @@ ollama run deepseek-r1:8b
 - https://aistudio.google.com/apikey
 
 ### MCP Server
+- https://github.com/modelcontextprotocol/servers
 - This provides internet access, so you can get latest documentation and update code accordingly
 
 ```bash
