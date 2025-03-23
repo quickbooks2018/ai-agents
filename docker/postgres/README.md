@@ -34,6 +34,8 @@ docker run -id \
 
 ### MCP Postgres (Read Only)
 ```bash
+git clone https://github.com/modelcontextprotocol/servers.git
+cd servers
 docker build -t mcp/postgres -f src/postgres/Dockerfile . 
 ```
 
