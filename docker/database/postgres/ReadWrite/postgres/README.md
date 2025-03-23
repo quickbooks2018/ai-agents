@@ -57,7 +57,7 @@ docker tag quickbooks2018/postgres:mcp mcp/postgres
 }
 ```
 
-- taa : "quickbooks2018/postgres:mcp"
+- tag : "quickbooks2018/postgres:mcp"
 ```json
 {
   "mcpServers": {
