@@ -68,7 +68,7 @@ docker build -t mcp/postgres -f src/postgres/Dockerfile .
         "-i",
         "--rm",
         "mcp/postgres",
-        "postgresql://asim:asim@host.docker.internal:5432/test"]
+        "postgresql://asim:asim@host.docker.internal:5432/bank_db"]
     }
   }
 }
