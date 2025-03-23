@@ -19,17 +19,19 @@ This is a Model Context Protocol (MCP) server implementation for PostgreSQL that
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/modelcontextprotocol/servers.git
-cd servers
+git clone https://github.com/quickbooks2018/ai-agents.git
+cd docker/database/postgres/ReadWrite/postgres
 ```
-
-2. Create the necessary files:
-
-- Copy the provided `index.ts` to `src/postgres/index.ts`
-- Copy the provided `Dockerfile` to `src/postgres/Dockerfile`
 
 3. Build the Docker image:
 
 ```bash
 docker build -t mcp/postgres -f Dockerfile . --no-cachetr
+```
+
+4. Pull ReadWrite MCP Server image:
+
+```bash
+docker pull quickbooks2018/postgres:mcp
+docker tag quickbooks2018/postgres:mcp mcp/postgres
 ```
