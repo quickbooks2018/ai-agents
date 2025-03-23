@@ -33,5 +33,43 @@ docker build -t mcp/postgres -f Dockerfile . --no-cachetr
 
 ```bash
 docker pull quickbooks2018/postgres:mcp
+
+# optional
 docker tag quickbooks2018/postgres:mcp mcp/postgres
+```
+
+5. Add Server in Cursor/Windsurf/ClaudeDesktop:
+
+- tag: "mcp/postgres"
+```json
+{
+  "mcpServers": {
+    "postgres": {
+      "command": "docker",
+      "args": [
+        "run", 
+        "-i", 
+        "--rm", 
+        "mcp/postgres",
+        "postgresql://asim:asim@host.docker.internal:5432/bank_db"]
+    }
+  }
+}
+```
+
+- taa : "quickbooks2018/postgres:mcp"
+```json
+{
+  "mcpServers": {
+    "postgres": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "quickbooks2018/postgres:mcp",
+        "postgresql://asim:asim@host.docker.internal:5432/bank_db"]
+    }
+  }
+}
 ```
