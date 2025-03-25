@@ -78,7 +78,15 @@ Create a simple Node.js webpage running in Docker that connects to an existing P
 - All builds, dependencies, and Node.js environment must be contained within Docker
 - Only Docker and Docker Compose commands should be executed on the host machine
 
-### 2. Sample Webpage
+### 2. Project Structure
+- **IMPORTANT**: All files must be placed ONLY in a directory named "application"
+- The complete project structure including Dockerfile, docker-compose.yml, and all source code must be contained within this directory
+- Example structure:
+  ```
+application
+  ```
+
+### 3. Sample Webpage
 - Build a single-page web application using Express.js
 - Implement a simple webpage that:
   - Displays some sample data from the PostgreSQL database
@@ -86,14 +94,14 @@ Create a simple Node.js webpage running in Docker that connects to an existing P
   - Includes a health-check indicator showing database connection status
 - Include appropriate error handling for database connection issues
 
-### 3. Database Connection
+### 4. Database Connection
 - **IMPORTANT**: Connect to EXISTING PostgreSQL server using `host.docker.internal` as the hostname
 - Database name: `my_online_store`
 - The PostgreSQL server is already running on the MCP server
 - Use the database credentials (username, password, port) as specified in the MCP configuration file
 - DO NOT create a new database or include PostgreSQL in Docker Compose
 
-### 4. Configuration
+### 5. Configuration
 - Store database credentials (host, username, password, port, database name) in:
   - Environment variables defined in docker-compose.yml, or
   - A separate .env file
@@ -101,14 +109,14 @@ Create a simple Node.js webpage running in Docker that connects to an existing P
 - Use the same credentials (username, password, etc.) that are mentioned in the MCP configuration file
 - Document clearly where these settings should be configured
 
-### 5. Docker Setup
+### 6. Docker Setup
 - Create a Dockerfile for the Node.js application
 - Create a docker-compose.yml file that ONLY manages the Node.js container
 - Configure the Node.js container to connect to the external PostgreSQL server using `host.docker.internal`
 - Ensure proper port mapping to access the webpage from the host browser
 - Include all necessary build steps in the Dockerfile
 
-### 6. Documentation
+### 7. Documentation
 - Include a README.md with:
   - Clear setup instructions
   - How to start and stop the application
@@ -116,10 +124,11 @@ Create a simple Node.js webpage running in Docker that connects to an existing P
 
 ## Testing Success
 The solution works when:
-1. `docker-compose up -d` starts the webpage successfully without requiring any host-installed packages
+1. `docker-compose up -d` started from within the "application" directory starts the webpage successfully
 2. The application connects to the existing PostgreSQL database using `host.docker.internal` and the MCP credentials
 3. The webpage is accessible from a browser on the host machine and displays data from the database
-4. The health-check endpoint or indicator shows a successful database connection
+4. The health-check indicator shows a successful database connection
 5. No additional PostgreSQL container is created or downloaded
 6. No Node.js, npm, or other application dependencies are required on the host machine
+7. All project files are contained exclusively within the "application" directory
 ```
