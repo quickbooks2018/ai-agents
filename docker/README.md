@@ -80,11 +80,7 @@ Create a simple Node.js webpage running in Docker that connects to an existing P
 
 ### 2. Project Structure
 - **IMPORTANT**: All files must be placed ONLY in a directory named "application"
-- The complete project structure including Dockerfile, docker-compose.yml, and all source code must be contained within this directory
-- Example structure:
-  ```
-application
-  ```
+- The complete project structure including Dockerfile, docker-compose.yml, and all source code must be contained within "application" directory
 
 ### 3. Sample Webpage
 - Build a single-page web application using Express.js
