@@ -56,7 +56,7 @@ volumes:
       "-i",
       "--rm",
       "quickbooks2018/postgres:mcp",
-      "postgresql://asim:asim@host.docker.internal:5432/postgres"]
+      "postgresql://asim:asim@host.docker.internal:5432/my_online_store"]
   }
   }
 }
