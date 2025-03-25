@@ -44,10 +44,10 @@ volumes:
 ### NodeJs Web App Prompt for Claude 3.7 Sonnet
 
 ```declarative
-# Docker-Based Node.js Web Application with PostgreSQL Connection
+# Docker-Based Node.js Sample Webpage with PostgreSQL Connection
 
 ## Task Overview
-Create a complete Node.js web application running in Docker that connects to an existing PostgreSQL database server on MCP server. The application will be a simple online store with product listing and basic shopping functionality.
+Create a simple Node.js webpage running in Docker that connects to an existing PostgreSQL database server on MCP server. The application will be a single sample webpage that displays data from the database.
 
 ## Specific Requirements
 
@@ -57,16 +57,13 @@ Create a complete Node.js web application running in Docker that connects to an 
 - All builds, dependencies, and Node.js environment must be contained within Docker
 - Only Docker and Docker Compose commands should be executed on the host machine
 
-### 2. Web Application Features
-- Build a responsive web application using Express.js and a frontend framework of your choice
-- Implement the following features:
-  - Homepage with product listings pulled from the PostgreSQL database
-  - Product detail pages
-  - Simple shopping cart functionality
-  - Order submission form
-  - Health-check endpoint at `GET /health` that tests database connectivity
+### 2. Sample Webpage
+- Build a single-page web application using Express.js
+- Implement a simple webpage that:
+  - Displays some sample data from the PostgreSQL database
+  - Has a clean, basic UI
+  - Includes a health-check indicator showing database connection status
 - Include appropriate error handling for database connection issues
-- Implement simple API endpoints to interact with product data in the database
 
 ### 3. Database Connection
 - **IMPORTANT**: Connect to EXISTING PostgreSQL server using `host.docker.internal` as the hostname
@@ -74,7 +71,6 @@ Create a complete Node.js web application running in Docker that connects to an 
 - The PostgreSQL server is already running on the MCP server
 - Use the database credentials (username, password, port) as specified in the MCP configuration file
 - DO NOT create a new database or include PostgreSQL in Docker Compose
-- The application should check for and create necessary tables if they don't exist
 
 ### 4. Configuration
 - Store database credentials (host, username, password, port, database name) in:
@@ -88,24 +84,21 @@ Create a complete Node.js web application running in Docker that connects to an 
 - Create a Dockerfile for the Node.js application
 - Create a docker-compose.yml file that ONLY manages the Node.js container
 - Configure the Node.js container to connect to the external PostgreSQL server using `host.docker.internal`
-- Ensure proper port mapping to access the web application from the host browser
+- Ensure proper port mapping to access the webpage from the host browser
 - Include all necessary build steps in the Dockerfile
-- Implement Docker best practices (appropriate base image, multi-stage builds if needed)
 
 ### 6. Documentation
 - Include a README.md with:
   - Clear setup instructions
   - How to start and stop the application
   - Environment variable configuration requirements
-  - Any assumptions made during development
 
 ## Testing Success
 The solution works when:
-1. `docker-compose up -d` starts the web application successfully without requiring any host-installed packages
+1. `docker-compose up -d` starts the webpage successfully without requiring any host-installed packages
 2. The application connects to the existing PostgreSQL database using `host.docker.internal` and the MCP credentials
-3. The web interface is accessible from a browser on the host machine
-4. Products can be viewed, added to cart, and orders submitted
-5. The health-check endpoint returns a positive response confirming database connectivity
-6. No additional PostgreSQL container is created or downloaded
-7. No Node.js, npm, or other application dependencies are required on the host machine
+3. The webpage is accessible from a browser on the host machine and displays data from the database
+4. The health-check endpoint or indicator shows a successful database connection
+5. No additional PostgreSQL container is created or downloaded
+6. No Node.js, npm, or other application dependencies are required on the host machine
 ```
