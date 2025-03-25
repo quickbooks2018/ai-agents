@@ -41,6 +41,27 @@ volumes:
   postgres_data:
 ```
 
+### MCP Configuration
+```json
+{
+  "mcpServers": {
+    "puppeteer": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "mcp/puppeteer"]
+    },
+  "postgres": {
+    "command": "docker",
+    "args": [
+      "run",
+      "-i",
+      "--rm",
+      "quickbooks2018/postgres:mcp",
+      "postgresql://asim:asim@host.docker.internal:5432/postgres"]
+  }
+  }
+}
+```
+
 ### NodeJs Web App Prompt for Claude 3.7 Sonnet
 
 ```declarative
