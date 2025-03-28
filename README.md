@@ -153,8 +153,11 @@ ollama run deepseek-r1:8b
 ### Google AI Studio (API Key)
 - https://aistudio.google.com/apikey
 
-### MCP Server
+### MCP ServerS
 - https://github.com/modelcontextprotocol/servers
+- https://github.com/punkpeye/awesome-mcp-servers?tab=readme-ov-file#file-systems
+- https://smithery.ai/
+
 - This provides internet access, so you can get latest documentation and update code accordingly
 
 ```bash
