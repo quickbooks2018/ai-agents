@@ -1,7 +1,6 @@
 # Browser MCP
 - https://docs.browsermcp.io/setup-server#cursor
 - https://github.com/BrowserMCP/mcp?tab=readme-ov-file
-- [Browser](https://www.youtube.com/watch?v=eD5SUj5qqgI)
 
 - Install Browser Extension
 - https://browsermcp.io/
@@ -41,7 +40,6 @@
 ### MCP Server Browser Tools
 
 - Github Repository: [mcp-server-browser-tools](https://github.com/AgentDeskAI/mcp-server-browser-tools)
-- [Browser Tools](https://www.youtube.com/watch?v=g08kmknV5Sg)
 
 ```bash
 git clone https://github.com/AgentDeskAI/browser-tools-mcp.git
