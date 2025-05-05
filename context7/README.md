@@ -7,7 +7,7 @@
 
 [GitHub Repository](https://github.com/upstash/context7) | [Documentation](https://github.com/upstash/context7/blob/main/README.md) | [Upstash](https://upstash.com)
 
-- website: [context7.com](https://https://context7.com/)
+- website: [context7.com](https://context7.com/)
 
 Context7 MCP pulls up-to-date, version-specific documentation and code examples straight from the source — and places them directly into your prompt.
 
