@@ -166,7 +166,7 @@ cd servers
 docker build -t mcp/puppeteer -f src/puppeteer/Dockerfile .
 ```
 
-- vscode Insider Settings
+- vscode Settings
 ```json
 {
     "mcp": {
@@ -179,6 +179,40 @@ docker build -t mcp/puppeteer -f src/puppeteer/Dockerfile .
         }
       }
     }
+    
+  }
+```
+
+- Vscode Multiple MCP Settings
+```json
+{
+    "mcp": {
+
+
+      "inputs": [],
+      "servers": {
+        "puppeteer": {
+          "command": "docker",
+          "args": ["run", "-i", "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "mcp/puppeteer"]
+        },
+      "Context7": {
+        "command": "npx",
+        "args": ["-y", "@upstash/context7-mcp@latest"]
+      },
+      "browsermcp": {
+        "command": "npx",
+        "args": ["-y", "@browsermcp/mcp@latest"]
+      },
+      "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ]
+    }
+      }
+    },
+    "chat.mcp.discovery.enabled": true
     
   }
 ```
