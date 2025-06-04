@@ -29,7 +29,7 @@
 }
 ```
 
-- Bowser MCP
+- Browser MCP
 ```json
    "browsermcp": {
       "command": "npx",
