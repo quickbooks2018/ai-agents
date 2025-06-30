@@ -253,3 +253,59 @@ docker build -t mcp/puppeteer -f src/puppeteer/Dockerfile .
   }
 }
 ```
+
+### Gemni-cli
+- https://github.com/google-gemini/gemini-cli
+
+```bash
+npm install -g @google/gemini-cli
+gemini
+```
+
+### Google Gemni Code Assistant
+
+- Enable Agent Mode
+
+```json
+ "geminicodeassist.updateChannel": "Insiders"
+```
+
+- json
+```json
+{
+    "mcpServers": {
+      "puppeteer": {
+        "command": "docker",
+        "args": ["run", "-i", "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "mcp/puppeteer"]
+      }
+    },
+    "Context7": {
+        "command": "docker",
+        "args": ["run", "-i", "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "context7-mcp"]
+      },
+      "geminicodeassist.updateChannel": "Insiders",
+      "mcp": {
+      
+        "inputs": [],
+        "servers": {
+          "mcp-server-time": {
+            "command": "python",
+            "args": [
+              "-m",
+              "mcp_server_time",
+              "--local-timezone=America/Los_Angeles"
+            ],
+            "env": {}
+          }
+        }
+      }
+  }
+```
+
+### Claude Code Installation
+
+- https://docs.anthropic.com/en/docs/claude-code/setup
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
