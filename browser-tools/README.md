@@ -39,7 +39,7 @@
 
 ### MCP Server Browser Tools
 
-- Github Repository: [mcp-server-browser-tools](https://github.com/AgentDeskAI/mcp-server-browser-tools)
+- Github Repository: [mcp-server-browser-tools](https://github.com/AgentDeskAI/browser-tools-mcp)
 
 ```bash
 git clone https://github.com/AgentDeskAI/browser-tools-mcp.git
