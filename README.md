@@ -309,3 +309,21 @@ gemini
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
+
+### Fetch MCP
+
+- https://github.com/modelcontextprotocol/servers/tree/main/src/fetch
+
+- json
+```json
+{
+  "mcp": {
+    "servers": {
+      "fetch": {
+        "command": "uvx",
+        "args": ["mcp-server-fetch"]
+      }
+    }
+  }
+}
+```
