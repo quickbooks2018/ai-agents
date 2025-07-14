@@ -309,3 +309,6 @@ gemini
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
+
+##### Claude Code UI
+- https://github.com/siteboon/claudecodeui
