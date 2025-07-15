@@ -313,3 +313,4 @@ npm install -g @anthropic-ai/claude-code
 ##### Claude Code UI
 - https://github.com/siteboon/claudecodeui
 - https://github.com/getAsterisk/claudia
+- https://github.com/BloopAI/vibe-kanban
