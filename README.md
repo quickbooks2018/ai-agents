@@ -338,3 +338,43 @@ npm install -g @azure/mcp
   }
 }
 ```
+
+### Terraform MCP
+
+- https://github.com/hashicorp/terraform-mcp-server
+
+- Claude Desktop
+```json
+{
+  "mcp": {
+    "servers": {
+      "terraform": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "hashicorp/terraform-mcp-server"
+        ]
+      }
+    }
+  }
+}
+```
+
+- VsCode
+```json
+{
+  "servers": {
+    "terraform": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "hashicorp/terraform-mcp-server"
+      ]
+    }
+  }
+}
+```
