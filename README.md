@@ -314,3 +314,27 @@ npm install -g @anthropic-ai/claude-code
 - https://github.com/siteboon/claudecodeui
 - https://github.com/getAsterisk/claudia
 - https://github.com/BloopAI/vibe-kanban
+
+### Azure MCP
+
+- https://github.com/Azure/azure-mcp
+```bash
+npm install -g @azure/mcp
+```
+
+- json
+```json
+{
+  "servers": {
+    "Azure MCP Server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@azure/mcp@latest",
+        "server",
+        "start"
+      ]
+    }
+  }
+}
+```
