@@ -32,13 +32,34 @@
         "@wonderwhy-er/desktop-commander"
       ]
     },
-    "Context7": {
+    "context7": {
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp@latest"]
     },
     "browsermcp": {
       "command": "npx",
       "args": ["-y", "@browsermcp/mcp@latest"]
+    },
+    "playwright": {
+      "command": "mcp-server-playwright"
+    },
+    "azure-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@azure/mcp@latest",
+        "server",
+        "start"
+      ]
+    },
+    "terraform": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "hashicorp/terraform-mcp-server"
+      ]
     }
   }
 }
