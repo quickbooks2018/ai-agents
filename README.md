@@ -315,6 +315,9 @@ npm install -g @anthropic-ai/claude-code
 - https://github.com/getAsterisk/claudia
 - https://github.com/BloopAI/vibe-kanban
 
+##### Gemni Web UI
+- https://github.com/cruzyjapan/Gemini-CLI-UI
+  
 ### Azure MCP
 
 - https://github.com/Azure/azure-mcp
