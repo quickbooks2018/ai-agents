@@ -1,5 +1,7 @@
 # DesktopCommanderMCP
 
+- https://github.com/aaddrick/claude-desktop-debian
+
 - https://github.com/wonderwhy-er/DesktopCommanderMCP
 
 - DesktopCommanderMCP
