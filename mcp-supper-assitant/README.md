@@ -12,7 +12,7 @@ npx @srbhptl39/mcp-superassistant-proxy@latest --config claude_desktop_config.js
 - UBUNTU
 ```bash
 cd ~/.config/Claude
-cd cd /home/asim/.config/Claude
+cd /home/asim/.config/Claude
 npx @srbhptl39/mcp-superassistant-proxy@latest --config claude_desktop_config.json
 ```
 
