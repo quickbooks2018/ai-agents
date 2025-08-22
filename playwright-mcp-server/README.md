@@ -7,6 +7,18 @@
 - https://github.com/microsoft/playwright-mcp/blob/main/extension/README.md
 - https://dev.to/debs_obrien/testing-in-a-logged-in-state-with-the-playwright-mcp-browser-extension-4cmg
 
+- json with extension
+```json
+"playwright": {
+        "type": "stdio",
+        "command": "npx",
+        "args": [
+          "@playwright/mcp@latest",
+          "--extension"
+        ]
+     },
+```
+
 
 ### Installation Commands for MAC
 
