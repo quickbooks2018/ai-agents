@@ -2,6 +2,8 @@
 
 - https://github.com/microsoft/playwright-mcp
 
+- Playwright MCP extension https://www.youtube.com/watch?v=uE0r51pneSA&ab_channel=DebbieO%27Brien
+
 
 ### Installation Commands for MAC
 
