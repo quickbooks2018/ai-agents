@@ -381,3 +381,18 @@ npm install -g @azure/mcp
   }
 }
 ```
+
+- n8n mcp
+- https://github.com/czlonkowski/n8n-mcp
+```json
+    "n8n-mcp": {
+      "command": "npx",
+      "args": ["n8n-mcp"],
+      "env": {
+        "MCP_MODE": "stdio",
+        "LOG_LEVEL": "error",
+        "DISABLE_CONSOLE_OUTPUT": "true",
+        "N8N_API_URL": "http://n8n.n8n.orb.local:5678",
+        "N8N_API_KEY": "use your api key"
+      }
+```
